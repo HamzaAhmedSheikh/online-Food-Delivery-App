@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import download from '../images/download.png'
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
 render() {
@@ -16,7 +17,7 @@ render() {
        <ul className="navbar-nav ml-auto">
          <li className="nav-item active">
            <a href='#' className="nav-link active text-uppercase"> 
-                    Restaurant 
+              <Link to='/restaurant'>   Restaurant </Link> 
            </a>
          </li>
         <li className="nav-item active">
@@ -32,7 +33,7 @@ render() {
    </nav>
 
 
-  <div className="jumbotron big-banner mb-0" style={{height: "500px"}} >
+  <div className="jumbotron big-banner mb-0"  >
 
     <div className="container text-light">
   
@@ -55,6 +56,42 @@ render() {
   </div>
  </div>
 
+
+ <div className='fresh-content text-light py-2'>
+       <div className="container">
+         <div className="row">
+
+
+         <div className='col'>
+           <div className='media'>
+             <div className='media-body'> 
+                <h5> 26 Restaurant </h5>
+             </div>
+            </div>
+         </div>
+
+         <div className='col'>
+           <div className='media'>
+             <div className='media-body'> 
+                <h5> 11 People Served </h5>
+             </div>
+           </div>
+         </div>
+
+           <div className='col'>
+             <div className='media'>
+               <div className='media-body'> 
+                  <h5> 49 Registered Users </h5>
+               </div>
+             </div>
+           </div>
+       </div>
+   </div>
+ </div>
+
+     <div className='container mt-5'>
+       <h1> HELLO </h1>  
+     </div>
 
 </header>
   )  
