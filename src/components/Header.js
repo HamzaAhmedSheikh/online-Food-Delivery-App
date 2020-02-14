@@ -89,9 +89,10 @@ render() {
    </div>
  </div>
 
-     <div className='container mt-5'>
-       <h1> HELLO </h1>  
-     </div>
+  <section className='container ourservices mt-5'>
+           <h1> HOW IT WORKS </h1> 
+    <p> Cum doctus civibus efficiantur in imperdiet deterruisset. </p>
+  </section>   
 
 </header>
   )  
