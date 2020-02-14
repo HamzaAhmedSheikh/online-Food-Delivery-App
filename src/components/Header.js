@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import download from '../images/download.png'
+import how_to_work1 from '../images/how_to_work1.png';
+import how_to_work2 from '../images/how_to_work2.png';
+import how_to_work3 from '../images/how_to_work3.png';
 import './Home.css';
 import { Link } from 'react-router-dom';
 
@@ -92,6 +95,20 @@ render() {
   <section className='container ourservices mt-5'>
            <h1> HOW IT WORKS </h1> 
     <p> Cum doctus civibus efficiantur in imperdiet deterruisset. </p>
+
+   <div className='row rowsetting'>
+      <div className='col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto'>
+        <div className='imgsetting d-block m-auto bg-warning'>
+            <img src={how_to_work1} className='logosetting' />
+        </div>
+          <h3> Choose A Restaurant </h3>   
+          <p>Cras vitae dictum velit. Duis at purus enim. Cras massa massa, maximus sit amet finibus quis, pharetra eu erat.</p>       
+      </div>
+   </div>
+
+
+
+
   </section>   
 
 </header>
