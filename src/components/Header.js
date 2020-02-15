@@ -3,6 +3,15 @@ import download from '../images/download.png'
 import how_to_work1 from '../images/how_to_work1.png';
 import how_to_work2 from '../images/how_to_work2.png';
 import how_to_work3 from '../images/how_to_work3.png';
+import listing_logo1 from '../images/listing_logo1.png';
+import listing_logo2 from '../images/listing_logo2.png';
+import listing_logo3 from '../images/listing_logo3.png';
+import listing_logo4 from '../images/listing_logo4.png';
+import listing_logo5 from '../images/listing_logo5.png';
+import listing_logo6 from '../images/listing_logo6.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import './Home.css';
 import { Link } from 'react-router-dom';
 
@@ -93,52 +102,6 @@ render() {
    </div>
  </div>
 
-  {/* <section className='container ourservices mt-5'>
-           <h1> HOW IT WORKS </h1> 
-    <p> Cum doctus civibus efficiantur in imperdiet deterruisset. </p>
-
-   <div className='row rowsetting'>
-      <div className='col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto'>
-        <div className='imgsetting d-block m-auto bg-warning'>
-            <img src={how_to_work1} className='logosetting' />
-        </div>
-          <h3> Choose A Restaurant </h3>   
-          <p>Cras vitae dictum velit. Duis at purus enim. Cras massa massa, maximus sit amet finibus quis, pharetra eu erat.</p>       
-      </div>
-
-      <div className='col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto'>
-        <div className='imgsetting d-block m-auto bg-warning'>
-            <img src={how_to_work2} className='logosetting' />
-        </div>
-          <h3> Choose A Tasty Dish </h3>   
-          <p>Cras vitae dictum velit. Duis at purus enim. Cras massa massa, maximus sit amet finibus quis, pharetra eu erat.</p>       
-      </div>
-
-      <div className='col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto'>
-        <div className='imgsetting d-block m-auto bg-warning'>
-            <img src={how_to_work3} className='logosetting' />
-        </div>
-          <h3> Pick Up or Delivery </h3>   
-          <p>Cras vitae dictum velit. Duis at purus enim. Cras massa massa, maximus sit amet finibus quis, pharetra eu erat.</p>       
-      </div>
-    </div>
-  </section>     
-   
-  <div className='jumbotron banner'> 
-    <div className='container mb-5'>
-      <p className='h1 text-uppercase text-white'>
-          Just Order And We Will Deliver You
-      </p>
-       <p className='text-white'>
-          Pellentesque eget justo eget nibh luctus semper at ut tellus.
-       </p>     
-       <button type='button' className='btn btn-warning text-uppercase mb-5'>
-         <Link to='/home'> <b> Order Now  </b></Link>  
-       </button>  
-    </div>
-  </div>
-
- */}
 
 <section className='container ourservices mt-5'>
  
@@ -187,10 +150,185 @@ Just Order And We Will Deliver You
 Pellentesque eget justo eget nibh luctus semper at ut tellus.
 </p> 
 <button type="button" class="btn btn-warning text-uppercase mb-5">
-   <b> <Link to='/home'> Order Now </Link> </b>
+   <b> <Link to='/restaurant'> Order Now </Link> </b>
 </button>
 </div>
 </div>
+
+  { /*------------ Section 3 ------------- */ }
+
+<div className="container-fluid py-5">
+ <div className="py-4">
+   <h2 className="h2 text-uppercase text-center">Featured Restaurant</h2>
+    <p className="text-center">Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+  </div>
+    <div className="container">
+    <div className="row">
+     <div className="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <div className="container res-shadow res-border">
+      <div className="row p-3">
+      <div className="col-lg-4 col-md-4 col-sm-12 text-center border p-2">
+        <img style={{ width: "70%" }} alt="Natural Healthy Food" src={listing_logo1} />
+      </div>
+        <div style={{ position: "relative" }} className="col-lg-8 col-md-8 col-sm-12 py-2">
+              <h5 className="mb-1">Natural Healthy Food</h5>
+               <p className="mb-2"><small>Apple Juice, Beef Roast, Cheese Burger</small></p>
+            <p>
+              <small className="">
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+               </small>
+               <small>(1) Review</small>
+             </p>
+                <span style={{ position: "absolute", top: 5, right: 5 }}>
+                  <FontAwesomeIcon icon={faHeart} className="text-success mr-1" />
+                </span>
+          </div>
+         </div>        
+       </div>
+    </div>
+    
+
+    <div className="col-lg-6 col-md-6 col-sm-12 mb-4">
+       <div className="container res-shadow res-border">
+       <div className="row p-3">
+        <div className="col-lg-4 col-md-4 col-sm-12 text-center border p-2">
+          <img style={{ width: "70%" }} alt="Menu & Drinks" src={listing_logo2} />
+       </div>
+        <div style={{ position: "relative" }} className="col-lg-8 col-md-8 col-sm-12 py-2">
+              <h5 className="mb-1">Menu &amp; Drinks</h5>
+               <p className="mb-2"><small>Chicken Roast, Chines Soup, Cold Coffee</small></p>
+            <p>
+              <small className="">
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+               </small>
+               <small>(3) Review</small>
+             </p>
+                <span style={{ position: "absolute", top: 5, right: 5 }}>
+                  <FontAwesomeIcon icon={faHeart} className="text-success mr-1" />
+                </span>
+          </div>
+         </div>        
+       </div>
+    </div>
+    
+
+    <div className="col-lg-6 col-md-6 col-sm-12 mb-4">
+       <div className="container res-shadow res-border">
+       <div className="row p-3">
+        <div className="col-lg-4 col-md-4 col-sm-12 text-center border p-2">
+          <img style={{ width: "70%" }} alt="Chefs" src={listing_logo3} />
+       </div>
+        <div style={{ position: "relative" }} className="col-lg-8 col-md-8 col-sm-12 py-2">
+              <h5 className="mb-1">Chefs</h5>
+               <p className="mb-2"><small>Egg Fry, Noodles, Pastry</small></p>
+          <p>
+           <small className="">
+             <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+             <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+             <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+             <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+             <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+            </small>
+            <small>(1) Review</small>
+           </p>
+                <span style={{ position: "absolute", top: 5, right: 5 }}>
+                  <FontAwesomeIcon icon={faHeart} className="text-success mr-1" />
+                </span>
+          </div>
+         </div>        
+       </div>
+    </div>
+    <div className="col-lg-6 col-md-6 col-sm-12 mb-4">
+       <div className="container res-shadow res-border">
+       <div className="row p-3">
+        <div className="col-lg-4 col-md-4 col-sm-12 text-center border p-2">
+          <img style={{ width: "70%" }} alt="Menu's" src={listing_logo4} />
+       </div>
+        <div style={{ position: "relative" }} className="col-lg-8 col-md-8 col-sm-12 py-2">
+              <h5 className="mb-1">Menu's</h5>
+               <p className="mb-2"><small>Fish Fry, Fresh Juice, Stakes</small></p>
+            <p>
+              <small className="">
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+               </small>
+               <small>(1) Review</small>
+             </p>
+                <span style={{ position: "absolute", top: 5, right: 5 }}>
+                  <FontAwesomeIcon icon={faHeart} className="text-success mr-1" />
+                </span>
+          </div>
+         </div>        
+       </div>
+    </div>
+    <div className="col-lg-6 col-md-6 col-sm-12 mb-4">
+       <div className="container res-shadow res-border">
+       <div className="row p-3">
+        <div className="col-lg-4 col-md-4 col-sm-12 text-center border p-2">
+          <img style={{ width: "70%" }} alt="Food N&H" src={listing_logo5} />
+       </div>
+        <div style={{ position: "relative" }} className="col-lg-8 col-md-8 col-sm-12 py-2">
+              <h5 className="mb-1">Food N&amp;H</h5>
+               <p className="mb-2"><small>Beef Roast, Cheese Burger, Doughnut</small></p>
+            <p>
+              <small className="">
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+               </small>
+               <small>(4) Review</small>
+             </p>
+                <span style={{ position: "absolute", top: 5, right: 5 }}>
+                  <FontAwesomeIcon icon={faHeart} className="text-success mr-1" />
+                </span>
+          </div>
+         </div>        
+       </div>
+    </div>
+    <div className="col-lg-6 col-md-6 col-sm-12 mb-4">
+       <div className="container res-shadow res-border">
+       <div className="row p-3">
+        <div className="col-lg-4 col-md-4 col-sm-12 text-center border p-2">
+          <img style={{ width: "70%" }} alt="Restaurant" src={listing_logo6} />
+       </div>
+        <div style={{ position: "relative" }} className="col-lg-8 col-md-8 col-sm-12 py-2">
+              <h5 className="mb-1">Restaurant</h5>
+               <p className="mb-2"><small>Apple Juice, BB.Q</small></p>
+            <p>
+              <small className="">
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+                 <FontAwesomeIcon icon={faStar} className="rating mr-1" />
+               </small>
+               <small>(2) Review</small>
+             </p>
+                <span style={{ position: "absolute", top: 5, right: 5 }}>
+                  <FontAwesomeIcon icon={faHeart} className="text-success mr-1" />
+                </span>
+          </div>
+         </div>        
+       </div>
+    </div> 
+   </div>
+  </div> 
+</div>
+
+
 
 
 </header>

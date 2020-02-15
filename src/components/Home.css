@@ -112,3 +112,17 @@ a:hover {
 .text-white {
     color: #fff !important;
 }
+
+/* ------------- Featured Restaurant ----------- */
+
+.res-shadow {
+   box-shadow: 0 0 7px rgba(173, 173, 173, 0.32); 
+}
+
+.res-border {
+   border: 1px solid #f2f2f2 
+}
+
+.rating {
+   color: #ffc107; 
+}
