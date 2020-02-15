@@ -11,7 +11,8 @@ render() {
  return( 
   <header>
    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a className="navbar-brand" href="#"><img src={download} /></a>
+        <a className="navbar-brand" href="#">
+          <Link to='/'><img src={download} /> </Link> </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span className="navbar-toggler-icon"></span>
          </button>
@@ -104,12 +105,40 @@ render() {
           <h3> Choose A Restaurant </h3>   
           <p>Cras vitae dictum velit. Duis at purus enim. Cras massa massa, maximus sit amet finibus quis, pharetra eu erat.</p>       
       </div>
-   </div>
+
+      <div className='col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto'>
+        <div className='imgsetting d-block m-auto bg-warning'>
+            <img src={how_to_work2} className='logosetting' />
+        </div>
+          <h3> Choose A Tasty Dish </h3>   
+          <p>Cras vitae dictum velit. Duis at purus enim. Cras massa massa, maximus sit amet finibus quis, pharetra eu erat.</p>       
+      </div>
+
+      <div className='col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto'>
+        <div className='imgsetting d-block m-auto bg-warning'>
+            <img src={how_to_work3} className='logosetting' />
+        </div>
+          <h3> Pick Up or Delivery </h3>   
+          <p>Cras vitae dictum velit. Duis at purus enim. Cras massa massa, maximus sit amet finibus quis, pharetra eu erat.</p>       
+      </div>
+    </div>
+  </section>     
+   
+  {/* <div className='jumbotron banner'> 
+    <div className='container mb-5'>
+      <p className='h1 text-uppercase text-white'>
+          Just Order And We Will Deliver You
+      </p>
+       <p className='text-white'>
+          Pellentesque eget justo eget nibh luctus semper at ut tellus.
+       </p>     
+       <button type='button' className='btn btn-warning text-uppercase mb-5'>
+         <Link to='/home'> <b> Order Now  </b></Link>  
+       </button>  
+    </div>
+  </div>      */}
 
 
-
-
-  </section>   
 
 </header>
   )  

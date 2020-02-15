@@ -73,3 +73,12 @@ a:hover {
 .logosetting {
     margin-top: 28px;
 } 
+
+.banner {
+    background-image: url('../images/home_middle.jpg');
+    background-size: 100% 100%;
+    background-position-y: 40%; 
+    height: 250px;
+    margin-top: 0px; 
+}
+
