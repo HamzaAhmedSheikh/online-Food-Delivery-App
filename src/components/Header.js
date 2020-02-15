@@ -93,7 +93,7 @@ render() {
    </div>
  </div>
 
-  <section className='container ourservices mt-5'>
+  {/* <section className='container ourservices mt-5'>
            <h1> HOW IT WORKS </h1> 
     <p> Cum doctus civibus efficiantur in imperdiet deterruisset. </p>
 
@@ -124,7 +124,7 @@ render() {
     </div>
   </section>     
    
-  {/* <div className='jumbotron banner'> 
+  <div className='jumbotron banner'> 
     <div className='container mb-5'>
       <p className='h1 text-uppercase text-white'>
           Just Order And We Will Deliver You
@@ -136,8 +136,61 @@ render() {
          <Link to='/home'> <b> Order Now  </b></Link>  
        </button>  
     </div>
-  </div>      */}
+  </div>
 
+ */}
+
+<section className='container ourservices mt-5'>
+ 
+ <h1> HOW IT WORKS </h1> 
+ <p> Cum doctus civibus efficiantur in imperdiet deterruisset. </p>   
+
+<div className='row rowsetting'>
+<div className='col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto'>
+<div className='imgsetting d-block m-auto bg-warning'>
+    <img src={how_to_work1} className='logosetting' />
+</div>
+  <h3> Choose A Restaurant </h3>   
+  <p>Cras vitae dictum velit. Duis at purus enim. Cras massa massa, maximus sit amet finibus quis, pharetra eu erat.</p>       
+</div>
+
+<div className='col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto'>
+<div className='imgsetting d-block m-auto bg-warning'>
+    <img src={how_to_work2} className='logosetting'  />
+</div>
+  <h3> Choose A Tasty Dish </h3>   
+  <p>Cras vitae dictum velit. Duis at purus enim. Cras massa massa, maximus sit amet finibus quis, pharetra eu erat.</p>       
+</div>
+
+<div className='col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto'>
+<div className='imgsetting d-block m-auto bg-warning'>
+    <img src={how_to_work3} className='logosetting'  />
+</div>
+  <h3> Pick Up Or Delivery </h3>   
+  <p>Cras vitae dictum velit. Duis at purus enim. Cras massa massa, maximus sit amet finibus quis, pharetra eu erat.</p>       
+</div> 
+
+<div className='col-lg-8 col-md-4 col-sm-4 col-10 d-block m-auto'>        
+    <p> <strong> <h1> New Features Will Be Added  </h1>  </strong> </p>      
+</div>
+
+</div>
+</section>     
+
+
+<div className='jumbotron text-center py-5 banner'>
+<div className='container mb-5'>
+<p className="h1 text-uppercase text-white mt-5 mb-3">
+Just Order And We Will Deliver You
+</p>
+<p class="text-white">
+Pellentesque eget justo eget nibh luctus semper at ut tellus.
+</p> 
+<button type="button" class="btn btn-warning text-uppercase mb-5">
+   <b> <Link to='/home'> Order Now </Link> </b>
+</button>
+</div>
+</div>
 
 
 </header>

@@ -35,7 +35,7 @@ a:hover {
     transition: all 0.3s ease-in-out !important;
 }
 
-/* ------------------ ourservices -------------- */
+ /* ------------------ ourservices -------------- */
 
 .ourservices {
     height: 700px;
@@ -73,12 +73,42 @@ a:hover {
 .logosetting {
     margin-top: 28px;
 } 
-
+    
 .banner {
     background-image: url('../images/home_middle.jpg');
-    background-size: 100% 100%;
+    background-size: 100%, 100%; 
     background-position-y: 40%; 
-    height: 250px;
-    margin-top: 0px; 
+    height: 350px;
+    margin-top: 0px;
 }
 
+.text-center {
+   text-align: center !important;  
+}
+
+.py5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.h1 {
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.mt-5 {
+   margin-top: 3rem !important; 
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
