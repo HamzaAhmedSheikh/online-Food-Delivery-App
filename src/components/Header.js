@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import './Home.css';
+import Footer from './Footer'
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
@@ -155,7 +156,7 @@ Pellentesque eget justo eget nibh luctus semper at ut tellus.
 </div>
 </div>
 
-  { /*------------ Section 3 ------------- */ }
+  
 
 <div className="container-fluid py-5">
  <div className="py-4">
@@ -327,8 +328,8 @@ Pellentesque eget justo eget nibh luctus semper at ut tellus.
    </div>
   </div> 
 </div>
-
-
+ 
+    <Footer />
 
 
 </header>
